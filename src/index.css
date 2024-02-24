@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #d7f4ff;
+  --bg-2: #28b7ff;
+  --bg-3: #0496ff;
+  --bg-4: #0496ff;
+  --gray: #dadddc;
+  --gray-2: #bdc4c1;
+  --text: #f1f4fd;
+  --shadow: #135895;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  background: var(--bg);
+}
+
+.swiper-slide-active {
+  filter: blur(0);
+  pointer-events: fill;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  font-weight: bold;
+  color: var(--text);
+  margin: 0 auto;
+  filter: drop-shadow(0 0 5px #fff);
+}

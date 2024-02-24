@@ -1,0 +1,67 @@
+.container {
+  width: 1500px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--bg-2),
+    var(--bg-4),
+    var(--bg-2),
+    transparent
+  );
+}
+
+.container h2 {
+  font-size: 35px;
+  margin-bottom: 5px;
+  color: var(--text);
+  text-shadow: 0 0 5px var(--shadow);
+}
+
+.content {
+  display: flex;
+  padding: 30px;
+  gap: 50px;
+}
+
+.skillsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skillsContainer img {
+  width: 75px;
+  animation: animation 3s ease-out infinite;
+  filter: drop-shadow(0 0 10px #fff);
+}
+
+.hr {
+  width: 40%;
+  height: 3px;
+  border: none;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--shadow) 50%,
+    transparent
+  );
+  margin: 0 auto;
+}
+
+@keyframes animation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px) scale(1.05);
+  }
+  0% {
+    transform: translateY(0);
+  }
+}

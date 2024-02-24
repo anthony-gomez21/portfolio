@@ -1,0 +1,26 @@
+.linksContainer {
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: var(--bg);
+  padding: 10px;
+  border-radius: 20px;
+  margin: 0 auto;
+  box-shadow: 5px 5px 10px var(--shadow);
+}
+
+.linksContainer a {
+  cursor: pointer;
+}
+
+.linksContainer a img {
+  width: 45px;
+  transition: all 0.5s ease;
+  filter: drop-shadow(2px 2px 5px var(--shadow));
+}
+
+.linksContainer a img:hover {
+  transform: scale(1.09);
+  filter: drop-shadow(3px 3px 5px transparent);
+}

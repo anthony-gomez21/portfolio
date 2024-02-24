@@ -1,0 +1,62 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+    153deg,
+    var(--shadow),
+    #000000 50%,
+    var(--gray) 49%,
+    var(--bg-3)
+  );
+  display: grid;
+  place-content: center;
+}
+
+.containerContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  gap: 100px;
+  z-index: 1;
+}
+
+.textContainer {
+  width: 700px;
+  height: 380px;
+  display: grid;
+  gap: 20px;
+  text-align: center;
+  box-shadow: inset 7px 7px 20px 3px var(--gray-2);
+  border-radius: 20px;
+  padding: 70px 100px;
+  background: var(--gray);
+  background: var(--text);
+}
+
+.textContainer h1 {
+  font-size: 50px;
+}
+
+.textContainer h3 {
+  font-size: 25px;
+  margin-bottom: 20px;
+  color: var(--shadow);
+  text-shadow: 0 0 10px var(--text);
+  margin-bottom: -5px;
+}
+
+.imgContainer img {
+  width: 380px;
+  border-radius: 50%;
+  background: linear-gradient(var(--bg-3), var(--bg));
+  box-shadow: inset 5px 5px 20px var(--shadow);
+}
