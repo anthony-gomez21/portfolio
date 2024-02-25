@@ -16,19 +16,19 @@ const slide_images = [
   {
     name: 'project-1',
     title: 'App of Movies',
-    img: '/src/assets/images/movie-app.png',
+    img: '/public/imagesProjects/movie-app.png',
     url: 'https://app-of-movies.vercel.app/',
   },
   {
     name: 'project-2',
     title: 'En proceso...',
-    img: '/public/process.jpeg',
+    img: '/public/imagesProjects/process.jpeg',
     url: '',
   },
   {
     name: 'project-3',
     title: 'En proceso...',
-    img: '/public/process.jpeg',
+    img: '/public/imagesProjects/process.jpeg',
     url: '',
   },
 ];
