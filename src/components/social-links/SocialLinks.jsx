@@ -21,7 +21,7 @@ const links = [
 
   {
     name: 'cv',
-    url: '/src/assets/AnthonyGomez.pdf',
+    url: '/src/assets/AnthonyGomez-porfolio.pdf',
     icon: '/cv.png',
   },
 ];
