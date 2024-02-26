@@ -91,8 +91,9 @@ export default function App() {
             <SwiperSlide key={image.name} className={styles.swiperSlide}>
               <a
                 className={
-                  (image.name === 'project-2' || image.name === 'project-3') &&
-                  styles.process
+                  image.name === 'project-2' || image.name === 'project-3'
+                    ? styles.process
+                    : ''
                 }
                 href={image.url}
                 target="_blank"

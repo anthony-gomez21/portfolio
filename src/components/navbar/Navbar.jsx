@@ -3,6 +3,7 @@ import styles from './navbar.module.css';
 
 function Navbar() {
   const [isNavbarFixed, setIsNavbarFixed] = useState(false);
+  const [toggleMenu, setToggleMenu] = useState(true);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -19,9 +20,15 @@ function Navbar() {
   }, []);
 
   return (
-    <div className={styles.navbarContainer}>
+    <div
+      className={`${styles.navbarContainer} ${
+        isNavbarFixed ? styles.fixed : ''
+      }`}
+    >
       <div
-        className={`${styles.container} ${isNavbarFixed ? styles.fixed : ''}`}
+        className={`${toggleMenu ? styles.container : styles.hideMenu} ${
+          isNavbarFixed ? styles.fixed : ''
+        }`}
         id="container"
       >
         <ul className={styles.linksContainer}>
@@ -50,6 +57,12 @@ function Navbar() {
           </li>
         </ul>
       </div>
+      <button
+        onClick={() => setToggleMenu(!toggleMenu)}
+        className={styles.buttonMenu}
+      >
+        ☰
+      </button>
       <div className={isNavbarFixed ? styles.extraSpace : ''}></div>
     </div>
   );

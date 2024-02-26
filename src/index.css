@@ -37,3 +37,19 @@ body {
   margin: 0 auto;
   filter: drop-shadow(0 0 5px #fff);
 }
+
+@media (max-width: 1366px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    position: absolute;
+    top: 43%;
+  }
+
+  .swiper-button-next {
+    right: 12%;
+  }
+
+  .swiper-button-prev {
+    left: 12%;
+  }
+}

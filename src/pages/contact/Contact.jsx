@@ -64,7 +64,7 @@ function Contact() {
 
         <button
           id="buttonSubmit"
-          className={submitButton ? styles.submitButton : styles.enviado}
+          className={submitButton ? styles.buttonSubmit : styles.enviado}
           type="submit"
         >
           {submitButton ? 'Enviar' : 'Enviado'}

@@ -24,3 +24,18 @@ span {
   color: var(--shadow);
   text-shadow: 0 0 10px var(--text);
 }
+
+@media (max-width: 1280px) {
+  .textContainerAbout {
+    width: 700px;
+    height: 280px;
+  }
+
+  .textContainerAbout h2 {
+    font-size: 30px;
+  }
+
+  .textContainerAbout p {
+    font-size: 18px;
+  }
+}

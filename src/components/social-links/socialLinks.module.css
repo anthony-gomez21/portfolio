@@ -24,3 +24,9 @@
   transform: scale(1.09);
   filter: drop-shadow(3px 3px 5px transparent);
 }
+
+@media (max-width: 1280px) {
+  .linksContainer a img {
+    width: 40px;
+  }
+}

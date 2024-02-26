@@ -23,23 +23,22 @@
 form {
   display: grid;
   gap: 20px;
-}
-
-form {
   border: 3px solid var(--gray);
   padding: 50px;
   border-radius: 20px;
   backdrop-filter: blur(100px);
   box-shadow: 3px 3px 10px var(--shadow);
+  transition: all 0.5s ease;
 }
 
 form input,
 textarea,
-.submitButton {
+.buttonSubmit {
   padding: 15px;
   border-radius: 10px;
   border: none;
   font-size: 18px;
+  transition: all 0.5s ease;
 }
 
 textarea {
@@ -48,7 +47,7 @@ textarea {
   resize: none;
 }
 
-.submitButton {
+.buttonSubmit {
   margin: 0 auto;
   width: 150px;
   cursor: pointer;
@@ -59,7 +58,7 @@ textarea {
   transition: all ease 0.2s;
 }
 
-.submitButton:hover {
+.buttonSubmit:hover {
   background: linear-gradient(var(--shadow), var(--bg-2));
   color: var(--text);
   box-shadow: 0 0 10px var(--text);
@@ -82,4 +81,18 @@ textarea {
   user-select: none;
   pointer-events: none;
   border: 3px solid green;
+}
+
+@media (max-width: 1366px) {
+  textarea {
+    width: 400px;
+    height: 300px;
+  }
+
+  form input,
+  textarea,
+  .submitButton {
+    padding: 12px;
+    font-size: 18px;
+  }
 }

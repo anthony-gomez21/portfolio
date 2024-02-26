@@ -1,12 +1,22 @@
 .navbarContainer {
   width: 100%;
-  height: 100%;
+  height: 60px;
   background: linear-gradient(
     to right,
 
-    var(--shadow),
-    #111
+    var(--bg-2),
+    #0087e0,
+    var(--bg-2)
   );
+  transition: width 0.3s ease, height 0.5s ease;
+  position: relative;
+}
+
+.principalContainer {
+  width: 100%;
+  height: 50px;
+  position: relative;
+  background: linear-gradient(to right, #111, var(--shadow), #111);
 }
 
 .container {
@@ -27,6 +37,26 @@
   transform: translateX(-50%);
   position: relative;
   transition: width 0.3s ease, height 0.5s ease;
+}
+
+.buttonMenu {
+  width: 45px;
+  height: 75%;
+  position: absolute;
+  right: 150px;
+  border-radius: 5px;
+  border: none;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  display: none;
+  top: 8px;
+  padding: 5px;
+}
+
+.buttonMenu:hover {
+  background: var(--bg);
+  box-shadow: 0 0 10px var(--shadow);
 }
 
 .linksContainer {
@@ -59,7 +89,7 @@
 }
 
 .fixed {
-  width: 70%;
+  width: 100%;
   height: 55px;
   position: fixed;
   top: 0;
@@ -75,6 +105,7 @@
   transition: all 0.8s ease;
   margin-top: 2px;
   border-radius: 5px;
+  z-index: 999;
 }
 
 .fixed .links {
@@ -85,4 +116,62 @@
 
 .extraSpace {
   height: 70px;
+}
+
+.hideMenu {
+  display: none;
+}
+
+@media (max-width: 1366px) {
+  .buttonMenu {
+    display: inline-block;
+    right: 50%;
+    top: 50%;
+    transform: translate(50%, -50%);
+  }
+
+  .container {
+    width: 600px;
+    height: 380px;
+    position: absolute;
+    top: 100%;
+    transform: none;
+    display: grid;
+    background: linear-gradient(var(--bg-2), var(--shadow));
+    box-shadow: 0 0 10px var(--shadow);
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .linksContainer {
+    display: grid;
+    gap: 20px;
+  }
+
+  .linksContainer li {
+    width: 300px;
+    padding: 13px;
+    background: var(--gray);
+    text-align: center;
+    box-shadow: inset 0 0px 10px var(--shadow);
+  }
+
+  .linksContainer li:hover {
+    background: linear-gradient(
+      to right,
+      transparent,
+      var(--gray),
+      transparent
+    );
+    box-shadow: none;
+  }
+
+  .links {
+    font-size: 23px;
+    color: var(--shadow);
+  }
+
+  .links:hover {
+    border-bottom: none;
+  }
 }
