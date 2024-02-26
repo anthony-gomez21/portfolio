@@ -132,11 +132,12 @@
 
   .container {
     width: 600px;
-    height: 380px;
-    position: absolute;
+    height: 400px;
+    position: relative;
     top: 100%;
     transform: none;
     display: grid;
+    place-content: center;
     background: linear-gradient(var(--bg-2), var(--shadow));
     box-shadow: 0 0 10px var(--shadow);
     left: 50%;
@@ -144,18 +145,37 @@
   }
 
   .linksContainer {
-    width: 600px;
-    display: grid;
-    gap: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    position: absolute;
+    margin-bottom: 30px;
   }
 
   .linksContainer li {
-    width: 600px;
+    width: 100%;
     padding: 13px;
     text-align: center;
   }
 
-  .linksContainer li:hover {
+  .links {
+    width: 100%;
+    height: 50px;
+    background: var(--gray);
+    font-size: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--shadow);
+    box-shadow: inset 0 0px 10px var(--shadow);
+    position: absolute;
+    left: 0;
+  }
+
+  .links:hover {
     background: linear-gradient(
       to right,
       transparent,
@@ -163,21 +183,6 @@
       transparent
     );
     box-shadow: none;
-  }
-
-  .links {
-    width: 300px;
-    height: 200px;
-    background: var(--gray);
-    font-size: 23px;
-    color: var(--shadow);
-    box-shadow: inset 0 0px 10px var(--shadow);
-  }
-
-  .links:hover {
     border-bottom: none;
   }
-}
-
-@media (max-width: 768px) {
 }

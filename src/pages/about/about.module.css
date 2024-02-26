@@ -91,20 +91,16 @@ span {
     padding: 20px 30px;
     margin-bottom: 80px;
   }
-
-  .textContainerAbout h2 {
-    font-size: 20px;
-    margin-bottom: -5px;
-  }
 }
 
 @media (max-width: 480px) {
   .textContainerAbout {
-    width: 450px;
+    width: 400px;
   }
+}
 
-  .textContainerAbout h2 {
-    font-size: 20px;
-    margin-bottom: -5px;
+@media (max-width: 320px) {
+  .textContainerAbout {
+    width: 350px;
   }
 }
