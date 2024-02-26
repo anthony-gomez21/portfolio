@@ -13,6 +13,7 @@
 }
 
 .containerContent {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -171,4 +172,28 @@
 }
 
 @media (max-width: 480px) {
+  .content {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+  }
+
+  .textContainer {
+    width: 100%;
+    height: 200px;
+  }
+
+  .textContainer h1 {
+    font-size: 25px;
+    margin-bottom: -10px;
+    text-wrap: balance;
+  }
+
+  .textContainer h3 {
+    font-size: 15px;
+  }
+
+  .imgContainer img {
+    width: 220px;
+  }
 }

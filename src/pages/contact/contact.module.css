@@ -137,4 +137,23 @@ textarea {
 }
 
 @media (max-width: 480px) {
+  .title {
+    font-size: 25px;
+  }
+
+  form {
+    padding: 40px 30px;
+  }
+
+  form input,
+  textarea,
+  .buttonSubmit {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+
+  textarea {
+    width: 250px;
+    height: 190px;
+  }
 }

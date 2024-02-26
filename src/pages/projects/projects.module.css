@@ -193,14 +193,18 @@
 }
 
 @media (max-width: 640px) {
+  .handImg {
+    width: 30px;
+  }
+
+  .handSpan {
+    font-size: 12px;
+    margin-bottom: -30px;
+  }
+
   .title {
     font-size: 25px;
   }
-
-  .swiper {
-    width: 100%;
-  }
-
   .swiperSlide {
     width: 150px;
     height: 150px;
