@@ -3,7 +3,7 @@ import styles from './navbar.module.css';
 
 function Navbar() {
   const [isNavbarFixed, setIsNavbarFixed] = useState(false);
-  const [toggleMenu, setToggleMenu] = useState(true);
+  const [toggleMenu, setToggleMenu] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
