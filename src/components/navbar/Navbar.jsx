@@ -3,7 +3,7 @@ import styles from './navbar.module.css';
 
 function Navbar() {
   const [isNavbarFixed, setIsNavbarFixed] = useState(false);
-  const [toggleMenu, setToggleMenu] = useState(false);
+  const [toggleMenu, setToggleMenu] = useState(true);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -12,10 +12,19 @@ function Navbar() {
       setIsNavbarFixed(scrollY > 0);
     };
 
+    const handleResize = () => {
+      const mediaQuery = window.matchMedia('(min-width: 1366px)');
+      setToggleMenu(mediaQuery.matches);
+    };
+
     window.addEventListener('scroll', handleScroll);
+    window.addEventListener('resize', handleResize);
+
+    handleResize();
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('resize', handleResize);
     };
   }, []);
 
@@ -57,6 +66,7 @@ function Navbar() {
           </li>
         </ul>
       </div>
+
       <button
         onClick={() => setToggleMenu(!toggleMenu)}
         className={styles.buttonMenu}

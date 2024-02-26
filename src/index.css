@@ -53,3 +53,30 @@ body {
     left: 12%;
   }
 }
+
+@media (max-width: 1280px) {
+  .swiper-button-next {
+    right: 3%;
+  }
+
+  .swiper-button-prev {
+    left: 3%;
+  }
+}
+
+@media (max-width: 1280px) {
+  .swiper-button-next {
+    right: 0;
+  }
+
+  .swiper-button-prev {
+    left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+}
