@@ -97,6 +97,10 @@ span {
   .textContainerAbout {
     width: 400px;
   }
+
+  .textContainerAbout p {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 320px) {

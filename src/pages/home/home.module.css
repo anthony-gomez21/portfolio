@@ -159,6 +159,9 @@
 }
 
 @media (max-width: 640px) {
+  .imgContainer img {
+    width: 220px;
+  }
   .content {
     display: flex;
     flex-direction: column-reverse;
@@ -168,6 +171,11 @@
   .textContainer {
     width: 350px;
     height: 200px;
+  }
+
+  .imgContainer img {
+    width: 180px;
+    border-radius: 25px;
   }
 }
 
@@ -191,9 +199,5 @@
 
   .textContainer h3 {
     font-size: 15px;
-  }
-
-  .imgContainer img {
-    width: 220px;
   }
 }
