@@ -66,7 +66,7 @@ export default function App() {
           </>
         ) : (
           <>
-            <h1 className={styles.title}>Proyectos</h1>
+            <h2 className={styles.title}>Proyectos</h2>
             <hr className={styles.hr} />
           </>
         )}

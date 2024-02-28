@@ -5,10 +5,14 @@ import styles from './home.module.css';
 function Home() {
   return (
     <div className={styles.container} id="home">
+      <h1>
+        Portafolio <span className={styles.spanTitle}>Front-End</span>
+      </h1>
+
       <div className={styles.containerContent}>
         <div className={styles.content}>
           <div className={styles.textContainer}>
-            <h1>Buenas, me llamo Anthony Gómez</h1>
+            <h2>Buenas, me llamo Anthony Gómez</h2>
             <h3>Desarrollador Front-end</h3>
 
             <SocialLinks />

@@ -12,6 +12,18 @@
   place-content: center;
 }
 
+h1 {
+  color: var(--text);
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+
+.spanTitle {
+  color: var(--bg-2);
+  text-shadow: none;
+}
+
 .containerContent {
   width: 100%;
   display: flex;
@@ -25,14 +37,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 50px;
-  gap: 100px;
+  gap: 80px;
   z-index: 1;
+  margin-bottom: 50px;
 }
 
 .textContainer {
-  width: 700px;
-  height: 380px;
+  width: 600px;
+  height: 340px;
   display: grid;
   place-content: center;
   gap: 20px;
@@ -45,7 +57,7 @@
   transition: all 0.5s ease;
 }
 
-.textContainer h1 {
+.textContainer h2 {
   font-size: 50px;
 }
 
@@ -57,7 +69,7 @@
 }
 
 .imgContainer img {
-  width: 380px;
+  width: 320px;
   border-radius: 50%;
   background: linear-gradient(var(--bg-3), var(--bg));
   box-shadow: inset 5px 5px 20px var(--shadow);
@@ -70,7 +82,7 @@
     height: 320px;
   }
 
-  .textContainer h1 {
+  .textContainer h2 {
     font-size: 40px;
     margin-bottom: -10px;
   }
@@ -94,7 +106,7 @@
     height: 280px;
   }
 
-  .textContainer h1 {
+  .textContainer h2 {
     font-size: 35px;
     margin-bottom: -10px;
   }
@@ -118,7 +130,7 @@
     height: 220px;
   }
 
-  .textContainer h1 {
+  .textContainer h2 {
     font-size: 30px;
     margin-bottom: -10px;
   }
@@ -138,12 +150,16 @@
     gap: 20px;
   }
 
+  h1 {
+    font-size: 40px;
+  }
+
   .textContainer {
     width: 350px;
     height: 200px;
   }
 
-  .textContainer h1 {
+  .textContainer h2 {
     font-size: 25px;
     margin-bottom: -10px;
     text-wrap: balance;
@@ -159,6 +175,10 @@
 }
 
 @media (max-width: 640px) {
+  h1 {
+    margin-bottom: 10px;
+  }
+
   .imgContainer img {
     width: 220px;
   }
@@ -189,12 +209,6 @@
   .textContainer {
     width: 100%;
     height: 200px;
-  }
-
-  .textContainer h1 {
-    font-size: 25px;
-    margin-bottom: -10px;
-    text-wrap: balance;
   }
 
   .textContainer h3 {
