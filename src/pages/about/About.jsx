@@ -18,7 +18,7 @@ function About() {
         <br />
         Me gusta la sinceridad y no me presento como un desarrollador perfecto,
         me presento como una persona responsable, puntual y con una mentalidad
-        abierta para mejorar, desde ya muchas gracias.
+        abierta para mejorar.
       </p>
     </div>
   );
